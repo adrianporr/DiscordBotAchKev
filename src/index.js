@@ -14,10 +14,6 @@ const client = new Client({
 
 eventHandler(client);
 
-/*client.on('ready', () => {
-    console.log(`${client.user.tag} has logged in!`);
-});*/
-
 client.on('interactionCreate', async (interaction ) => {
     try {
         if(!interaction.isButton()) return;
@@ -44,21 +40,5 @@ client.on('interactionCreate', async (interaction ) => {
         console.log(error)
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 client.login(process.env.KEV_BOT_TOKEN);
