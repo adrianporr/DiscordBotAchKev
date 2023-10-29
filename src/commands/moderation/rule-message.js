@@ -10,9 +10,13 @@ module.exports = {
     callback: async ( client, interaction) => {
 
         const roles = [
-            {
+            { // Community Role
                 id: "1167746037478326272",
                 label: "Regeln akzeptieren!"
+            },
+            { // Weeb Role 
+                id: "1168247103127048253",
+                label: "Weeb Rolle"
             }
         ]
 
@@ -32,7 +36,9 @@ module.exports = {
             })
     
             await channel.send({
-                content: 'Akzeptiere die Regeln um Zugriff auf den Server zu erhalten!',
+                content: `
+                **REGELWERK**\n\n**[1]** Illegale Aktivitäten - Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert!\n**[2]** Respektvoller Umgang miteinander ist mir persönlich ein sehr wichtiges Anliegen!\n**[3]** Alle Beleidigungen, rassistischen, rechtsextremistischen oder sexistischen Aussagen sind in jeder Art und Weise untersagt und werden keineswegs toleriert.
+                `,
                 components: [row],
             });
             process.exit
