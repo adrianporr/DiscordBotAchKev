@@ -1,7 +1,7 @@
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require('discord.js');
 
 module.exports = {
-    name: 'rule-message',
+    name: 'rules',
     description: 'Sende Regel Message',
     devOnly: true,
     //testOnly: Boolean,
@@ -21,10 +21,10 @@ module.exports = {
             .setTitle('REGELWERK')
             .addFields(
                 { name: '[1] Illegale Aktivitäten', value: '> Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert', inline: true},
-                { name: '[2] Illegale Aktivitäten', value: '> Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert', inline: true},
+                { name: '[2] Miteinander', value: '>  Alle Beleidigungen, rassistischen, rechtsextremistischen oder sexistischen Aussagen sind in jeder Art und Weise untersagt und werden keineswegs toleriert.', inline: true},
                 { name: '\u200B', value: '\u200B' },
-                { name: '[3] Illegale Aktivitäten', value: '> Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert', inline: true},
-                { name: '[4] Illegale Aktivitäten', value: '> Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert', inline: true},
+                { name: '[3] Fremdwerbung', value: '> Keine Werbung in den Text-Kanälen/Sprach-Kanälen! Wenn es etwas zu bewerben gibt, dann nutzt bitte dafür den Channel', inline: true},
+                { name: '[4] Medien', value: '> Das Teilen pornografischer, gewaltverherrlichender oder illegaler Medien ist strikt untersagt.', inline: true},
                 { name: '\u200B', value: '\u200B' },
                 { name: '[5] Illegale Aktivitäten', value: '> Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert', inline: true},
                 { name: '[6] Illegale Aktivitäten', value: '> Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert', inline: true},

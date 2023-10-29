@@ -29,13 +29,24 @@ client.on('interactionCreate', async (interaction ) => {
 
         const hasRole = interaction.member.roles.cache.has(role.id);
 
-        if (hasRole) {
-            await interaction.editReply(`Du hast die Regeln bereits bestätigt!`);
-            return;
+        if (!(role.id == "1167746037478326272")) {
+            if (hasRole) { // Any role add and remove
+                await interaction.member.roles.remove(role);
+                interaction.editReply(`Die Rolle ${role} wurde entfernt!`)
+            } else {
+                await interaction.member.roles.add(role);
+                interaction.editReply(`Du hast die Rolle ${role} erhalten!`)
+            }
+        } else {
+            if (hasRole) { // Community role and rule accept
+                interaction.editReply(`Du hast die Regeln bereits akzeptiert!`)
+            } else {
+                await interaction.member.roles.add(role);
+                interaction.editReply(`Du hast die Regeln akzeptiert und die Rolle ${role} erhalten! Viel Spaß auf dem Server`)
+            }
         }
-
-        await interaction.member.roles.add(role);
-        await interaction.editReply(`Du hast die Regeln akeptiert! Dir wurde die Rolle ${role} erteilt! Viel Spaß!`);
+        
+        
     } catch (error) {
         console.log(error)
     }
