@@ -43,10 +43,9 @@ client.on('interactionCreate', async (interaction ) => {
             } else {
                 await interaction.member.roles.add(role);
                 interaction.editReply(`Du hast die Regeln akzeptiert und die Rolle ${role} erhalten! Viel Spaß auf dem Server`)
+                return;
             }
         }
-        
-        
     } catch (error) {
         console.log(error)
     }
