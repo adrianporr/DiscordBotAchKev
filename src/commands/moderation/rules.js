@@ -20,7 +20,7 @@ module.exports = {
             .setColor(0x34fbfb)
             .setTitle('REGELWERK')
             .addFields(
-                { name: '[1] llegale Aktivitäten', value: '> Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert!', inline: true},
+                { name: '[1] Illegale Aktivitäten', value: '> Jegliche Art von Gesetzesverstößen oder Verstöße gegen die Discord Guidelines werden nicht toleriert!', inline: true},
                 { name: '[2] Miteinander', value: '>  Alle Beleidigungen, rassistischen, rechtsextremistischen oder sexistischen Aussagen sind in jeder Art und Weise untersagt und werden keineswegs toleriert!', inline: true},
                 { name: '\u200B', value: '\u200B' },
                 { name: '[3] Fremdwerbung', value: '> Keine Werbung in den Text-Kanälen/Sprach-Kanälen! Wenn es etwas zu bewerben gibt, dann nutzt bitte dafür den Channel!', inline: true},
