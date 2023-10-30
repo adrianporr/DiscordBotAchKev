@@ -11,7 +11,7 @@ module.exports = {
 
         const roles = [
             { // Community Role
-                id: "1167746037478326272",
+                id: "407848288180764672", // Community Role achKev 
                 label: "Regeln akzeptieren!"
             }
         ]
@@ -23,7 +23,7 @@ module.exports = {
             )
 
         try {
-            const channel = client.channels.cache.get('1167752003540242442');
+            const channel = client.channels.cache.get('568395081191653376');
             if (!channel) return;
     
             const row = new ActionRowBuilder();

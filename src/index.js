@@ -29,7 +29,7 @@ client.on('interactionCreate', async (interaction ) => {
 
         const hasRole = interaction.member.roles.cache.has(role.id);
 
-        if (!(role.id == "1167746037478326272")) {
+        if (!(role.id == "407848288180764672")) {
             if (hasRole) { // Any role add and remove
                 await interaction.member.roles.remove(role);
                 interaction.editReply(`Die Rolle ${role} wurde entfernt!`)
