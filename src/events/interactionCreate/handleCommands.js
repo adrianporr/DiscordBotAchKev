@@ -35,20 +35,20 @@ module.exports = async (client, interaction) => {
 
         if (commandObject.botPermissions?.length) {
             for (const permission of commandObject.botPermissions) {
-                const bot = interaction.guild.member.me;
+                const bot = interaction.guild.members.me;
 
-                if (!bot.permission.has(permission)) {
+                if (!bot.permissions.has(permission)) {
                     interaction.reply({
                         content: "I don't have enough permissions.",
                         ephemeral: true
                     });
-                    break;
+                    return;
                 }
             }
         }
 
         await commandObject.callback(client, interaction);
-       
+        
     } catch (error) {
         console.log(`There was an error running this command: ${error}`)
     }
