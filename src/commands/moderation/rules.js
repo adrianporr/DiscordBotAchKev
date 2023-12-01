@@ -36,7 +36,7 @@ module.exports = {
             )
 
         try {
-            const channel = client.channels.cache.get('1167752003540242442');
+            const channel = client.channels.cache.get('568700495321890816');
             if (!channel) return;
     
             const row = new ActionRowBuilder();
