@@ -8,11 +8,13 @@ module.exports = {
     //deleted: true,
     
     callback: async ( client, interaction) => {
-
+        // Define the roles
         const roles = [
             { // Community Role
                 id: "407848288180764672", // Community Role achKev 
                 label: "Regeln akzeptieren!"
+
+                
             }
         ]
 
@@ -25,9 +27,11 @@ module.exports = {
         try {
             const channel = client.channels.cache.get('568700495321890816');
             if (!channel) return;
-    
+            // Build the action row with buttons
+
             const row = new ActionRowBuilder();
-    
+            
+            // Add buttons to the action row
             roles.forEach((role) => {
                 row.components.push(
                     new ButtonBuilder()
